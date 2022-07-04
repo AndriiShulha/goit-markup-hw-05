@@ -208,6 +208,36 @@ section {
     
           }
 
+          
+
+          .nav-site-studio::after {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                align-items: flex-end;
+                bottom: -1px;
+                width: 48px;
+                height: 4px;
+
+                border-radius: 2px;
+                background-color: var(--accent-txt-color);
+          }
+
+
+          .nav-site-portfolio::after {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                align-items: flex-end;
+                bottom: -1px;
+                width: 78px;
+                height: 4px;
+    
+                background-color: var(--accent-txt-color);
+                border-radius: 2px;
+
+          }
+
     
 
     .header-contact {
@@ -444,7 +474,9 @@ section {
 
     
 
-   
+   .header {
+    position: relative;
+   }
 
 
     .team-wrapper {
