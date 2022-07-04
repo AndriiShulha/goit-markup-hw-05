@@ -58,6 +58,33 @@ section {
 
 /* Сітка із застосуванням flex-box */
 
+    .img-wrapper {
+        position: relative;
+        
+    }
+
+    .img {
+        display: block;
+    }
+
+    .desc {
+        position: absolute;
+        padding: 27px;
+        width: 100%;
+       
+        text-align: center;
+        background: rgba(47, 48, 58, 0.8);
+        margin: 0;
+        bottom: 0;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.43;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 
 
  .about-img {
