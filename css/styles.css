@@ -72,12 +72,15 @@ section {
      }
 
    .card-img {
+        position: relative;
+        overflow: hidden;
         max-width: 100%;
         padding: 0;
         margin: 15px;
         }
 
  .card-set-item {
+    
      display: block;
      flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
      max-width: 100%;
@@ -96,6 +99,42 @@ section {
         1px 4px 6px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
+
+    .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transform: translateY(100%);
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgba(33, 150, 243, 0.9);
+        padding: 63px 24px;
+
+        transition: transform 250ms linear;
+
+    }
+
+    .card-img:hover .portfolio-overlay {
+        transform: translateY(0);
+    }
+
+        .portfolio-desc {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+            
+            color: #FFFFFF;
+        }
+
 
  .card-img.list.card-set-item {
      margin: 15px;
