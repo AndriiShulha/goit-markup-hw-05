@@ -127,6 +127,7 @@ section {
         cursor: pointer;
     }
 
+    
     .portfolio-overlay {
         position: absolute;
         top: 0;
@@ -265,7 +266,7 @@ section {
 }
 
 
-
+   
 
     .nav-link {
         display:block;
@@ -275,40 +276,29 @@ section {
         transition: color var(--anim-slow);
     }
 
-          .current {
-              color: var(--accent-txt-color);
-    
-          }
+        .header-list-item {
+            position: relative;
+        }
+
+          .current::after {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            align-items: flex-end;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+        
+            border-radius: 2px;
+            background-color: var(--accent-txt-color);
+            color: var(--accent-txt-color);
+        }
 
           
 
-          .nav-site-studio::after {
-                position: absolute;
-                content: "";
-                display: inline-block;
-                align-items: flex-end;
-                bottom: -1px;
-                width: 48px;
-                height: 4px;
-
-                border-radius: 2px;
-                background-color: var(--accent-txt-color);
-          }
+          
 
 
-          .nav-site-portfolio::after {
-                position: absolute;
-                content: "";
-                display: inline-block;
-                align-items: flex-end;
-                bottom: -1px;
-                width: 78px;
-                height: 4px;
-    
-                background-color: var(--accent-txt-color);
-                border-radius: 2px;
-
-          }
 
     
 
@@ -888,6 +878,10 @@ section {
         color: var(--accent-txt-color);
        
     }
+
+    .address {
+        margin-top: 20px;
+    }
      
      .link:hover,
      .link:focus {
@@ -896,6 +890,7 @@ section {
 
      .footer-logo-ft {
         color: var(--color-light);
+        
      }
 
      .address {
@@ -955,6 +950,7 @@ section {
      .footer-container {
         display: flex;
         align-items: baseline;
+        
      }
 
      .soc-links-footer-title {
@@ -963,6 +959,8 @@ section {
         
             color: #FFFFFF;
      }
+
+        
 
 
      /* Modal window */
