@@ -127,6 +127,9 @@ section {
         cursor: pointer;
     }
 
+    .portfolio-ovrl {
+        position: relative;
+    }
     
     .portfolio-overlay {
         position: absolute;
