@@ -127,6 +127,10 @@ section {
         cursor: pointer;
     }
 
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+    }
     
     .portfolio-overlay {
         position: absolute;
